@@ -15,22 +15,26 @@ public class Programa {
 			try {
 				String nome = JOptionPane
 						.showInputDialog("Informe a marca [Cancelar] para sair:  ");
-				if (nome.equalsIgnoreCase("Honda")) {
-					Moto moto = new Honda();
-					imprimeDdadosMoto(moto);
-				} else if (nome.equalsIgnoreCase("Yamaha")) {
-					Moto moto = new Yamaha();
-					imprimeDdadosMoto(moto);
-				} else if (nome.equalsIgnoreCase("Suzuki")) {
-					Moto moto = new Suzuki();
-					imprimeDdadosMoto(moto);
-				}
+				fabrica(nome);
 			} catch (Exception e) {
 				break;
 			}
 		}
 		System.out.println("\nPROGRAMA FINALIZADO!");
 
+	}
+
+	public static void fabrica(String nome) {
+		if (nome.equalsIgnoreCase("Honda")) {
+			Moto moto = new Honda();
+			imprimeDdadosMoto(moto);
+		} else if (nome.equalsIgnoreCase("Yamaha")) {
+			Moto moto = new Yamaha();
+			imprimeDdadosMoto(moto);
+		} else if (nome.equalsIgnoreCase("Suzuki")) {
+			Moto moto = new Suzuki();
+			imprimeDdadosMoto(moto);
+		}
 	}
 
 	public static void imprimeDdadosMoto(Moto moto) {
