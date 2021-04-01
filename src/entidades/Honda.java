@@ -1,9 +1,6 @@
 package entidades;
 
-public class Honda {
-	public String nome;
-	public String cilindrada;
-	public String cor;
+public class Honda extends Moto {
 	public Honda() {
 		nome 		= "CBX (HONDA)";
 		cilindrada 	= "500";

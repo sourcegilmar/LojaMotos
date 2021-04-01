@@ -1,9 +1,6 @@
 package entidades;
 
-public class Suzuki {
-	public String nome;
-	public String cilindrada;
-	public String cor;
+public class Suzuki extends Moto {
 	public Suzuki() {
 		nome = "DRZ (SUZUKI)";
 		cilindrada = "400";

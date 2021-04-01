@@ -3,6 +3,7 @@ package aplicacao;
 import javax.swing.JOptionPane;
 
 import entidades.Honda;
+import entidades.Moto;
 import entidades.Suzuki;
 import entidades.Yamaha;
 
@@ -15,7 +16,7 @@ public class Programa {
 				String nome = JOptionPane
 						.showInputDialog("Informe a marca [Cancelar] para sair:  ");
 				if (nome.equalsIgnoreCase("Honda")) {
-					Honda moto = new Honda();
+					Moto moto = new Honda();
 					JOptionPane.showMessageDialog(null, "\nNome: " + moto.nome
 							+ "\nCilindrada: " + moto.cilindrada + "\nCor: "
 							+ moto.cor, "Dados da moto",
